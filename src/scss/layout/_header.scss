@@ -1,0 +1,108 @@
+.header{
+    
+     background-color: darken($grisOscuro, 10);
+     max-height: 50rem;
+  
+
+     .logo{
+        @include tablet{
+            width: 40%;
+            height: 40%;
+        }
+      
+        align-items: center;
+      margin: auto;
+      
+     }
+
+     h1{
+        @include tablet{
+            font-size: 4.5rem;  
+        }
+        font-family: $fuente_principal;
+        font-size: 3rem;
+        color: $blanco;
+     }
+
+}
+
+.header2{
+  display: block;
+
+    @include tablet{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+ 
+   
+
+}
+.barra {
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    .logo {
+        width: 30rem;
+    }
+
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+.navegacion_principal{
+
+@include tablet{
+    display: flex;
+    visibility: visible;
+}
+    text-decoration: none;
+
+    font-family: $fuente_secundaria;
+    font-weight: 500;
+    font-size: 1.5rem;
+  
+    
+
+    a{
+        @include tablet{
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
+        font-size: 2rem;
+        display:inline;
+        }
+        color: $blanco;
+        margin-right: 2rem;
+        display: block;
+        text-align: center;
+
+        cursor: pointer;
+
+        &:hover{
+            color: $amarillo;
+        }
+    }
+
+}
+
+.menu-fixed{
+position: fixed;
+z-index: 1000;
+top: 0;
+width: 100%;
+max-width: 1000;
+box-shadow: 0px 4px 3px rgba(0, 0 ,0, .5);
+};

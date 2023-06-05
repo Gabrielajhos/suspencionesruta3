@@ -1,0 +1,60 @@
+body{
+    width: 100%;
+  margin: 0;
+}
+
+.ofrecemos{
+   
+background-color: darken($gris, 30);
+background-size: cover;
+padding: 1rem;
+gap: 1rem;
+    h2{
+        font-weight:  400;
+        font-family: $fuente_principal;
+        color: $negro;
+        font-size: 5rem;
+        margin-bottom: 0;
+
+    }
+
+    h3{
+        color: $amarillo;
+        font-family: $fuente_secundaria;
+        font-weight: 600;
+        font-size: 3rem;
+
+    }
+
+    p{
+        font-family: $fuente_secundaria;
+        font-weight: 600;
+        font-size: 2rem;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+       
+    }
+
+    .parraf{
+        text-align: justify;
+    }
+
+    .icon{
+        background-color: rgba(80, 74, 74, 0.471);
+        border-radius: 80%;
+        max-width: 120%;
+    
+    }
+
+    .ofrec{
+@include tablet{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+   display: block;
+
+    }   
+}
+

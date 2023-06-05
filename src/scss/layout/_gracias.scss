@@ -1,0 +1,25 @@
+.agradecimientos {
+    background-image: url(../../../img/man-g56a6e8474_1920.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10rem;
+
+    align-items: center;
+  
+
+    h2{
+        background-color: rgba(0, 0, 0, 0.56);
+        width: 50%;
+        color: $amarillo;
+        font-family: $fuente_principal;
+        margin: auto;
+    }
+
+    h3{
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.549);
+        width: 50%;
+        color: $amarillo;   
+        font-family: $fuente_secundaria; 
+    }
+}

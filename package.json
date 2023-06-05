@@ -1,0 +1,29 @@
+{
+  "name": "web-autoligeras",
+  "version": "1.0.0",
+  "description": "Taller Mecanico",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "sass": "sass --watch src/scss:build/css"
+  },
+  "keywords": [
+    "macanica",
+    "ligera"
+  ],
+  "author": "Gabriela Contreras",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.14",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.57.1",
+    "terser": "^5.16.1"
+  }
+}

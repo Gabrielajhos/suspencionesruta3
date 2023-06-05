@@ -1,0 +1,69 @@
+.main{
+    background-color: $grisOscuro;
+    margin-top: 0;
+    padding: 2rem; 
+    h2{
+        font-family: $fuente_principal;
+        font-weight: 400;
+        font-size: 4rem;
+        color: $amarillo;
+       
+    }
+    h3{
+        font-family: $fuente_secundaria;
+        font-weight: 500;
+        color: $blanco;
+        font-size: 2.8rem ;
+    }
+}
+.formulario{
+    background-color: darken($gris, 20);
+    margin-bottom: 4rem;
+
+   legend{
+    font-family: $fuente_principal;
+    font-size: 2rem;
+    color: $negro;
+   }
+
+    label{
+        
+ 
+        font-family: $fuente_secundaria;
+        color: $grisOscuro;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-right: 2rem;
+        
+    }
+    input{
+        border: none;
+        width: 60%;
+        padding: 1.8rem;
+        margin: 1rem 0 1rem 0;
+    }
+    textarea{
+        border: none;
+        width: 100%;
+        height: 15rem;
+    }
+
+   
+}
+.datos{
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+  display: block;
+    align-items: center;
+    text-align: center;
+}
+.condicion{
+    display: flex;
+}
+.enviar{
+    cursor: pointer;
+    
+}

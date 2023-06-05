@@ -1,0 +1,51 @@
+.marcas{
+margin-left: auto;
+    background-color: darken($gris, 30);
+    background-size: cover;
+}
+
+.iconos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+img{
+
+    margin: auto;
+    width: 60%;
+    height: 60%;
+
+}
+
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        margin: auto;
+        img{
+            margin: auto;
+            width: 50%;
+            height: 70%;
+        
+        }
+    }
+}
+
+.datos-contact{
+    display: block;
+
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+   
+    background-color: $grisOscuro;
+    color: #e9e9e9;
+    font-family: $fuente_secundaria;
+    text-align: center;
+    padding: 1rem;
+    a{
+        text-decoration: none;
+        color: #e9e9e9;
+        font-family: $fuente_secundaria;
+    }
+}
